@@ -1,0 +1,167 @@
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+main .img-fluid {
+    margin-top: 65px;
+}
+.container-fluid {
+    display: flex;
+    align-items: center;
+}
+#nav {
+    background-color: white;
+}
+.jurusan {
+    padding-top: 20px;
+}
+.jurusan-text {
+    text-align: center;
+    margin: 5px;
+}
+.jurusan-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    flex-wrap: wrap;
+}
+/* ... */
+
+#jurusan-box {
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    background: linear-gradient(43deg, blue, blueviolet);
+    color: white;
+    box-shadow: 0 0 3px black;
+    margin: 5px;
+    width: 300px;
+    min-height: 200px;
+    transition: opacity 1s;
+}
+.annoucemnet-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+#htb {
+    background: linear-gradient(43deg, white, rgb(233, 233, 233));
+    padding: 5px;
+    width: fit-content;
+    border-radius: 0 10px 10px 0;
+    color: black;
+}
+.garis {
+    background: linear-gradient(43deg, blueviolet, blue);
+    width: 100%;
+    height: 5px;
+    z-index: 0;
+}
+.news {
+    margin-top: 20px;
+    background-color: rgb(116, 92, 255);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.news-box {
+    background-color: white;
+    border-radius: 10px;
+    margin: 5px;
+    transition: .5s ease-in-out;
+    box-shadow: 0 0 5px black;
+}
+.content {
+    display: flex;
+    align-items: center;
+}
+.news-text  {
+    width: 100%;
+    margin-left: 5px;
+}
+.img-news {
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+}
+.tggl {
+    justify-content: end;
+    display: flex;
+}
+.jurusan-list a {
+    width: 100%;
+    text-decoration: none;
+    color: black;
+}
+.news-box:hover {
+    background-color: #c7c7c7;
+}
+footer {
+    padding: px;
+    background-color: rgb(224, 224, 224);
+    text-align: center;
+}
+@keyframes wave-animation {
+    0% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: -100% 0;
+    }
+}
+@media screen and (max-width: 600px) {
+    .navbar-brand {
+        font-size: large;
+        display: flex;
+        align-items: center;
+    }
+    .navbar-brand img {
+        margin-right: 10px;
+    }
+    *{
+        font-size: 10px;
+    }
+    #jurusan-box {
+        min-height: 150px;
+    }
+}
